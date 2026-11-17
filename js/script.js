@@ -16,3 +16,16 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("navbar-scrolled");
   }
 });
+
+// Fecha o menu responsivo após clicar em um link
+const navLinks = document.querySelectorAll("#navbarContent .nav-link");
+
+const navbarCollapse = document.querySelector("#navbarContent");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+
+    bsCollapse.hide();
+  });
+});
