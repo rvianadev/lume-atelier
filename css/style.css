@@ -395,3 +395,12 @@ footer {
   background-color: var(--color-bronze);
   color: var(--color-charcoal);
 }
+
+/* Fotografias dos cartões de serviços */
+
+.service-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
