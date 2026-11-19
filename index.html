@@ -359,19 +359,272 @@
     </section>
 
 
+
     <!-- Experiência -->
     <section id="experiencia">
       <div class="container">
-        <h2>Cada detalhe importa.</h2>
+
+        <!-- Cabeçalho da seção -->
+        <div class="text-center mb-5">
+
+          <span class="section-label">
+            NOSSO PROCESSO
+          </span>
+
+          <h2>Cada detalhe importa.</h2>
+
+          <p>
+            Da primeira conversa à entrega final,
+            cada etapa é conduzida com cuidado e sensibilidade.
+          </p>
+
+        </div>
+
+        <!-- Etapas da experiência -->
+        <div class="row g-4">
+
+          <!-- Etapa 01 -->
+          <div class="col-md-4">
+
+            <div class="experience-item">
+
+              <span class="experience-number">01</span>
+
+              <h3>Escuta e planejamento</h3>
+
+              <p>
+                Entendemos sua história, suas expectativas
+                e os objetivos de cada projeto para construir
+                uma experiência verdadeiramente personalizada.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Etapa 02 -->
+          <div class="col-md-4">
+
+            <div class="experience-item">
+
+              <span class="experience-number">02</span>
+
+              <h3>Direção e criação</h3>
+
+              <p>
+                Planejamos cada detalhe da produção,
+                trabalhando iluminação, composição e direção
+                para revelar a essência de cada história.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Etapa 03 -->
+          <div class="col-md-4">
+
+            <div class="experience-item">
+
+              <span class="experience-number">03</span>
+
+              <h3>Curadoria e entrega</h3>
+
+              <p>
+                Cada imagem passa por uma seleção criteriosa
+                e um tratamento cuidadoso antes de chegar
+                às mãos de quem confia em nosso trabalho.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
     </section>
+
+
 
     <!-- Contato -->
     <section id="contato">
       <div class="container">
-        <h2>Vamos criar algo extraordinário?</h2>
+
+        <!-- Cabeçalho da seção -->
+        <div class="text-center mb-5">
+
+          <span class="section-label">
+            FALE CONOSCO
+          </span>
+
+          <h2>Vamos criar algo extraordinário?</h2>
+
+          <p>
+            Conte-nos sua ideia. Será um prazer fazer parte
+            da sua próxima história.
+          </p>
+
+        </div>
+
+        <div class="row g-5">
+
+          <!-- Informações de contato -->
+          <div class="col-lg-5">
+
+            <div class="contact-info">
+
+              <h3>Entre em contato.</h3>
+
+              <p>
+                Estamos disponíveis para conversar sobre
+                seu projeto, esclarecer dúvidas e apresentar
+                nossas possibilidades de trabalho.
+              </p>
+
+              <div class="contact-detail">
+                <span class="contact-label">Endereço</span>
+                <p>
+                  Rua das Acácias, 120 – Centro
+                </p>
+              </div>
+
+              <div class="contact-detail">
+                <span class="contact-label">Telefone</span>
+                <p>
+                  (21) 3456-7890
+                </p>
+              </div>
+
+              <div class="contact-detail">
+                <span class="contact-label">E-mail</span>
+                <p>
+                  contato@lumeatelier.com.br
+                </p>
+              </div>
+
+              <p class="contact-note">
+                Atendimento mediante agendamento.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Formulário de contato -->
+          <div class="col-lg-7">
+
+            <form id="contactForm" novalidate>
+
+              <div class="row g-3">
+
+                <div class="col-md-6">
+
+                  <label for="nome" class="form-label">
+                    Nome
+                  </label>
+
+                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome completo"
+                    required>
+
+                  <div class="invalid-feedback">
+                    Informe seu nome.
+                  </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                  <label for="email" class="form-label">
+                    E-mail
+                  </label>
+
+                  <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@exemplo.com"
+                    required>
+
+                  <div class="invalid-feedback">
+                    Informe um e-mail válido.
+                  </div>
+
+                </div>
+
+                <div class="col-12">
+
+                  <label for="servico" class="form-label">
+                    Serviço de interesse
+                  </label>
+
+                  <select class="form-select" id="servico" name="servico" required>
+
+                    <option value="" selected disabled>
+                      Selecione uma opção
+                    </option>
+
+                    <option value="retratos">
+                      Retratos e ensaios
+                    </option>
+
+                    <option value="eventos">
+                      Eventos e celebrações
+                    </option>
+
+                    <option value="corporativo">
+                      Fotografia corporativa e comercial
+                    </option>
+
+                    <option value="outro">
+                      Outro assunto
+                    </option>
+
+                  </select>
+
+                  <div class="invalid-feedback">
+                    Selecione um serviço.
+                  </div>
+
+                </div>
+
+                <div class="col-12">
+
+                  <label for="mensagem" class="form-label">
+                    Mensagem
+                  </label>
+
+                  <textarea class="form-control" id="mensagem" name="mensagem" rows="5"
+                    placeholder="Conte-nos um pouco sobre seu projeto..." required></textarea>
+
+                  <div class="invalid-feedback">
+                    Escreva uma mensagem.
+                  </div>
+
+                </div>
+
+                <div class="col-12">
+
+                  <button type="submit" class="btn contact-btn">
+                    Enviar mensagem
+                  </button>
+
+                </div>
+
+                <div class="col-12">
+
+                  <div id="formFeedback" class="form-feedback" role="status" aria-live="polite">
+                  </div>
+
+                </div>
+
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
       </div>
     </section>
+
 
   </main>
 
