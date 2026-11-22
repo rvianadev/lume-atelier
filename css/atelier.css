@@ -1,0 +1,76 @@
+/* ========================================
+   SEÇÃO O ATELIER
+======================================== */
+
+#atelier {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* Identificação da seção */
+
+#atelier .section-label {
+  display: inline-block;
+  margin-bottom: 14px;
+
+  color: var(--color-bronze);
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+/* Título principal */
+
+#atelier h2 {
+  margin-bottom: 24px;
+
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.2;
+}
+
+/* Textos institucionais */
+
+#atelier p {
+  font-size: 0.98rem;
+  line-height: 1.9;
+  color: #444;
+}
+
+/* Fotografia institucional */
+
+.atelier-image {
+  width: 100%;
+  height: 460px;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 3px;
+}
+
+/* Blocos de missão, visão e valores */
+
+.atelier-pillar {
+  height: 100%;
+  padding: 28px;
+
+  background-color: var(--color-sand);
+  border-top: 3px solid var(--color-bronze);
+}
+
+.atelier-pillar h3 {
+  margin-bottom: 16px;
+  font-size: 1.7rem;
+}
+
+.atelier-pillar p,
+.atelier-pillar li {
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+.atelier-pillar ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}

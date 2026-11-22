@@ -1,0 +1,49 @@
+/* Logomarca horizontal da Navbar */
+.navbar-logo {
+  display: block;
+  width: 215px;
+  height: auto;
+  max-width: 100%;
+}
+/* Navbar dinâmica */
+
+#mainNavbar {
+  padding: 18px 0;
+  background-color: transparent;
+
+  transition:
+    background-color 0.3s ease,
+    padding 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+#mainNavbar.navbar-scrolled {
+  background-color: rgba(23, 23, 23, 0.96);
+  padding: 12px 0;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* Efeito de sublinhado ao passar o mouse */
+
+#mainNavbar .nav-link {
+  position: relative;
+  width: fit-content;
+}
+
+#mainNavbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 9%;
+  bottom: 4px;
+  width: 85%;
+  height: 2px;
+  background-color: var(--color-bronze);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+#mainNavbar .nav-link:hover::after {
+  transform: scaleX(1);
+}

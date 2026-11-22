@@ -1,0 +1,59 @@
+/* ==============================
+   PORTFÓLIO
+============================== */
+
+#portfolio .section-label {
+  color: var(--color-bronze);
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+#portfolio h2 {
+  margin: 12px 0;
+}
+
+#portfolio .text-center > p {
+  color: #555;
+}
+/* ========================================
+   CAROUSEL DO PORTFÓLIO
+======================================== */
+
+#portfolioCarousel .carousel-indicators [data-bs-target] {
+  background-color: var(--color-off-white);
+  opacity: 0.65;
+}
+
+#portfolioCarousel .carousel-indicators .active {
+  background-color: var(--color-bronze);
+  opacity: 1;
+}
+
+/* Controles laterais do Carousel */
+
+#portfolioCarousel .carousel-control-prev,
+#portfolioCarousel .carousel-control-next {
+  width: 8%;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+#portfolioCarousel .carousel-control-prev:hover,
+#portfolioCarousel .carousel-control-next:hover {
+  opacity: 1;
+}
+
+/* ========================================
+   DIMENSÕES DO CAROUSEL
+======================================== */
+
+#portfolioCarousel .carousel-item {
+  height: clamp(360px, 55vw, 540px);
+  background-color: var(--color-charcoal);
+}
+
+#portfolioCarousel .carousel-item img {
+  height: 100%;
+  object-fit: contain;
+}

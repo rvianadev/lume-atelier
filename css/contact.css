@@ -1,0 +1,55 @@
+#contato .section-label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+#contato {
+  padding-top: 60px;
+}
+
+#contato .section-label {
+  margin-bottom: 18px;
+}
+/* ========================================
+   BOTÃO DO FORMULÁRIO DE CONTATO
+======================================== */
+
+.contact-btn {
+  padding: 12px 26px;
+
+  background-color: var(--color-bronze);
+  color: var(--color-charcoal);
+
+  border: 1px solid var(--color-bronze);
+  border-radius: 4px;
+
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #927653;
+  border-color: #927653;
+  color: var(--color-charcoal);
+}
+
+.contact-btn:focus-visible {
+  outline: 2px solid var(--color-bronze);
+  outline-offset: 3px;
+}
+
+/* Feedback do formulário */
+
+.form-feedback {
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+.form-feedback.success {
+  color: #287a50;
+}
