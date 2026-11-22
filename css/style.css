@@ -101,6 +101,19 @@ section {
   background-color: var(--color-off-white);
 }
 
+#contato .section-label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+#contato {
+  padding-top: 60px;
+}
+
+#contato .section-label {
+  margin-bottom: 18px;
+}
+
 /* Seções escuras */
 #servicos,
 #experiencia {
@@ -369,8 +382,22 @@ footer {
 .service-image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 340px;
+  object-fit: cover;
+  object-position: center;
   border-radius: 0;
+}
+
+@media (max-width: 767.98px) {
+  #servicos .row > div:nth-child(3) .service-image {
+    object-position: center top;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .service-image {
+    height: 220px;
+  }
 }
 
 /* ==============================
@@ -563,7 +590,7 @@ footer {
 ======================================== */
 
 #portfolioCarousel .carousel-item {
-  height: clamp(360px, 55vw, 720px);
+  height: clamp(360px, 55vw, 540px);
   background-color: var(--color-charcoal);
 }
 
@@ -637,4 +664,11 @@ footer {
   font-size: 0.7rem;
   opacity: 0.7;
   margin-bottom: 0;
+}
+
+.footer-academic-note {
+  font-size: 0.65rem;
+  opacity: 0.55;
+  margin-bottom: 0;
+  margin-top: 8px;
 }

@@ -36,6 +36,7 @@ navLinks.forEach((link) => {
 
 // Seleciona o formulário
 const contactForm = document.querySelector("#contactForm");
+let feedbackTimeout;
 
 // Monitora o evento de envio
 contactForm.addEventListener("submit", (event) => {
@@ -44,6 +45,7 @@ contactForm.addEventListener("submit", (event) => {
 
   // Seleciona o elemento de feedback
   const formFeedback = document.querySelector("#formFeedback");
+  clearTimeout(feedbackTimeout);
 
   // Limpa mensagens anteriores
   formFeedback.textContent = "";
@@ -71,6 +73,12 @@ contactForm.addEventListener("submit", (event) => {
 
   // Adiciona a classe de sucesso
   formFeedback.classList.add("success");
+
+  // Remove a mensagem de sucesso após 5 segundos
+  feedbackTimeout = setTimeout(() => {
+    formFeedback.textContent = "";
+    formFeedback.classList.remove("success");
+  }, 5000);
 
   // Limpa os campos do formulário
   contactForm.reset();
