@@ -326,34 +326,85 @@
 
         </div>
 
-        <!-- Galeria de fotografias -->
-        <div class="portfolio-grid">
 
-          <div class="portfolio-item portfolio-item-1">
-            <img src="assets/images/portfolio-retrato.png" alt="Retrato feminino com composição editorial">
+
+
+        <!-- Carrossel de fotografias -->
+        <div id="portfolioCarousel" class="carousel slide mt-5" data-bs-ride="carousel" data-bs-interval="5000">
+
+          <!-- Indicadores -->
+          <div class="carousel-indicators">
+
+            <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Fotografia 1"></button>
+
+            <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"
+              aria-label="Fotografia 2"></button>
+
+            <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2"
+              aria-label="Fotografia 3"></button>
+
+            <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="3"
+              aria-label="Fotografia 4"></button>
+
+            <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="4"
+              aria-label="Fotografia 5"></button>
+
+            <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="5"
+              aria-label="Fotografia 6"></button>
+
           </div>
 
-          <div class="portfolio-item portfolio-item-2">
-            <img src="assets/images/portfolio-casamento.png" alt="Casal em momento especial durante o casamento">
+          <!-- Imagens -->
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="assets/images/portfolio-retrato.png" class="d-block w-100" alt="Retrato feminino editorial">
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/images/portfolio-casamento.png" class="d-block w-100"
+                alt="Casal durante celebração de casamento">
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/images/portfolio-corporativo.png" class="d-block w-100"
+                alt="Retrato profissional corporativo">
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/images/portfolio-comercial.png" class="d-block w-100"
+                alt="Fotografia comercial de produto">
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/images/portfolio-evento.png" class="d-block w-100" alt="Registro fotográfico de evento">
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/images/portfolio-retrato-masculino.png" class="d-block w-100"
+                alt="Retrato masculino editorial">
+            </div>
+
           </div>
 
-          <div class="portfolio-item portfolio-item-3">
-            <img src="assets/images/portfolio-corporativo.png" alt="Retrato profissional em ambiente corporativo">
-          </div>
+          <!-- Controles de navegação -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
 
-          <div class="portfolio-item portfolio-item-4">
-            <img src="assets/images/portfolio-comercial.png" alt="Fotografia comercial de produto">
-          </div>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 
-          <div class="portfolio-item portfolio-item-5">
-            <img src="assets/images/portfolio-evento.png" alt="Registro de celebração e evento">
-          </div>
+            <span class="visually-hidden">Anterior</span>
+          </button>
 
-          <div class="portfolio-item portfolio-item-6">
-            <img src="assets/images/portfolio-retrato-masculino.png" alt="Retrato masculino com iluminação editorial">
-          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+            <span class="visually-hidden">Próxima</span>
+          </button>
 
         </div>
+
 
       </div>
     </section>
