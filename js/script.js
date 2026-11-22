@@ -42,6 +42,13 @@ contactForm.addEventListener("submit", (event) => {
   // Impede o envio tradicional do formulário
   event.preventDefault();
 
+  // Seleciona o elemento de feedback
+  const formFeedback = document.querySelector("#formFeedback");
+
+  // Limpa mensagens anteriores
+  formFeedback.textContent = "";
+  formFeedback.classList.remove("success");
+
   // Seleciona os campos de texto
   const nome = document.querySelector("#nome");
   const email = document.querySelector("#email");
@@ -58,9 +65,6 @@ contactForm.addEventListener("submit", (event) => {
     return;
   }
 
-  // Seleciona o elemento de feedback
-  const formFeedback = document.querySelector("#formFeedback");
-
   // Exibe mensagem de sucesso
   formFeedback.textContent =
     "Mensagem enviada com sucesso! Em breve entraremos em contato.";
@@ -73,4 +77,75 @@ contactForm.addEventListener("submit", (event) => {
 
   // Remove os estados visuais de validação
   contactForm.classList.remove("was-validated");
+});
+
+// ========================================
+// MODAL DE SERVIÇOS
+// ========================================
+
+// Conteúdo de cada serviço
+const serviceContent = {
+  retratos: {
+    title: "Retratos e ensaios",
+    description:
+      "Mais do que registrar uma imagem, buscamos revelar a personalidade e a essência de cada pessoa. Nossos ensaios são conduzidos com sensibilidade e direção fotográfica, respeitando a identidade e a expressão individual.",
+  },
+
+  eventos: {
+    title: "Eventos e celebrações",
+    description:
+      "Cada celebração reúne momentos únicos e emoções irrepetíveis. Nossa fotografia acompanha os acontecimentos com discrição e sensibilidade, preservando os detalhes e as histórias que tornam cada evento especial.",
+  },
+
+  corporativo: {
+    title: "Fotografia corporativa e comercial",
+    description:
+      "A imagem também comunica valores, profissionalismo e identidade. Produzimos fotografias para empresas, profissionais e marcas que desejam fortalecer sua presença e transmitir sua essência visual.",
+  },
+};
+
+// Seleciona o modal
+const serviceModal = document.querySelector("#serviceModal");
+
+// Monitora a abertura do modal
+serviceModal.addEventListener("show.bs.modal", (event) => {
+  // Identifica o botão que acionou o modal
+  const button = event.relatedTarget;
+
+  // Obtém o serviço selecionado
+  const service = button.dataset.service;
+
+  // Recupera o conteúdo correspondente
+  const content = serviceContent[service];
+
+  // Atualiza o título e a descrição
+  document.querySelector("#serviceModalLabel").textContent = content.title;
+
+  document.querySelector("#serviceModalBody").textContent = content.description;
+});
+
+// ========================================
+// NAVEGAÇÃO DO MODAL PARA CONTATO
+// ========================================
+
+// Seleciona o botão de contato do modal
+const contactFromModal = document.querySelector("#contactFromModal");
+
+// Monitora o clique no botão
+contactFromModal.addEventListener("click", () => {
+  // Obtém a instância do modal
+  const modalInstance = bootstrap.Modal.getInstance(serviceModal);
+
+  // Monitora o término do fechamento
+  serviceModal.addEventListener(
+    "hidden.bs.modal",
+    () => {
+      // Navega até a seção de contato
+      document.querySelector("#contato").scrollIntoView();
+    },
+    { once: true },
+  );
+
+  // Fecha o modal
+  modalInstance.hide();
 });

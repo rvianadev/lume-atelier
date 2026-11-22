@@ -10,26 +10,26 @@
 
 ## ✨ Sobre o projeto
 
-A **LUME Atelier** é um projeto de desenvolvimento de uma landing page institucional para um estúdio fictício de fotografia profissional, concebido com posicionamento **Premium / Editorial**.
+A **LUME Atelier** é um projeto de desenvolvimento de um site institucional para um estúdio fictício de fotografia profissional, concebido com posicionamento **Premium / Editorial**.
 
 A proposta é apresentar uma experiência digital sofisticada, na qual fotografia, design e tecnologia se encontram para transmitir a essência de uma marca que valoriza a sensibilidade artística, a excelência técnica e a identidade visual.
 
-O projeto busca explorar recursos modernos de desenvolvimento frontend, aplicando princípios de design responsivo, hierarquia visual, experiência do usuário e consistência estética.
+O site apresenta os serviços oferecidos pelo estúdio, uma seleção de trabalhos fotográficos, informações institucionais e um canal de contato simulado.
 
 ## 🎨 Identidade visual
 
 A identidade da LUME Atelier foi concebida para transmitir sofisticação, elegância e atemporalidade.
 
-Sua linguagem visual combina elementos editoriais, tipografia refinada, fotografias cinematográficas e uma paleta de cores inspirada em tons naturais e metálicos.
+Sua linguagem visual combina elementos editoriais, tipografia refinada, fotografias e uma paleta de cores inspirada em tons naturais e metálicos.
 
 ### Paleta de cores
 
-| Cor          | Código    | Aplicação                           |
-| ------------ | --------- | ----------------------------------- |
-| Preto carvão | `#171717` | Fundos principais                   |
-| Off-white    | `#F8F6F1` | Fundos claros e textos              |
-| Areia        | `#E8E1D6` | Elementos secundários               |
-| Bronze       | `#A68B6A` | Destaques e elementos de identidade |
+| Cor | Código | Aplicação |
+|---|---|---|
+| Preto carvão | `#171717` | Fundos principais e elementos de contraste |
+| Off-white | `#F8F6F1` | Fundos claros e áreas de leitura |
+| Areia | `#E8E1D6` | Cartões e elementos secundários |
+| Bronze | `#A68B6A` | Destaques e elementos de identidade |
 
 ### Tipografia
 
@@ -40,12 +40,28 @@ Sua linguagem visual combina elementos editoriais, tipografia refinada, fotograf
 
 O projeto utiliza tecnologias fundamentais do desenvolvimento frontend:
 
-| Tecnologia | Finalidade                                |
-| ---------- | ----------------------------------------- |
-| HTML5      | Estruturação e semântica das páginas      |
-| CSS3       | Estilização, layouts e responsividade     |
-| JavaScript | Interatividade e manipulação de elementos |
-| Bootstrap  | Componentes e recursos de interface       |
+| Tecnologia | Finalidade |
+|---|---|
+| HTML5 | Estruturação e semântica do conteúdo |
+| CSS3 | Estilização, layouts e responsividade |
+| JavaScript | Interatividade, validação e manipulação de elementos |
+| Bootstrap 5.3.3 | Grid responsivo e componentes de interface |
+
+O Bootstrap é utilizado em conjunto com uma folha de estilos própria, responsável pela personalização dos componentes e aplicação da identidade visual.
+
+## ⚙️ Funcionalidades implementadas
+
+O site apresenta as seguintes funcionalidades:
+
+- **Navegação responsiva:** menu com navegação entre as seções da página e comportamento adaptado a dispositivos móveis.
+- **Cards de serviços:** apresentação das modalidades de fotografia oferecidas pelo estúdio.
+- **Modal dinâmico:** exibição de informações específicas de cada serviço, com conteúdo atualizado por JavaScript.
+- **Carrossel de fotografias:** apresentação de seis imagens, com reprodução automática e controles de navegação.
+- **Formulário de contato:** campos para identificação do visitante, seleção do serviço e descrição da solicitação.
+- **Validação JavaScript:** verificação dos campos obrigatórios e do formato do endereço de e-mail.
+- **Rolagem suave:** transição entre seções durante a navegação.
+
+**Observação:** o formulário possui finalidade demonstrativa. A validação e a mensagem de confirmação são realizadas no navegador, sem transmissão ou armazenamento de dados em servidor.
 
 ## 📂 Estrutura do projeto
 
@@ -54,7 +70,17 @@ lume-atelier/
 │
 ├── assets/
 │   ├── images/
-│   │   └── lume-hero-background.png
+│   │   ├── lume-hero-background.png
+│   │   ├── atelier.png
+│   │   ├── servico-retratos.png
+│   │   ├── servico-eventos.png
+│   │   ├── servico-corporativo.png
+│   │   ├── portfolio-retrato.png
+│   │   ├── portfolio-casamento.png
+│   │   ├── portfolio-corporativo.png
+│   │   ├── portfolio-comercial.png
+│   │   ├── portfolio-evento.png
+│   │   └── portfolio-retrato-masculino.png
 │   │
 │   └── logo/
 │       ├── lume-atelier-logo-fundo-claro.svg
@@ -70,8 +96,8 @@ lume-atelier/
 │   └── script.js
 │
 ├── index.html
-│
-└── README.md
+├── README.md
+└── descricao_lume_atelier.md
 ```
 
 ## 🚀 Executando o projeto
@@ -96,6 +122,8 @@ Utilize o Visual Studio Code e execute o arquivo `index.html` com a extensão Li
 
 A aplicação será disponibilizada localmente no navegador.
 
+**Observação:** o projeto utiliza o Bootstrap e as fontes do Google Fonts por meio de serviços externos. É necessária conexão com a internet para carregar esses recursos.
+
 ## 📸 Conceito e proposta
 
 A LUME Atelier foi idealizada para apresentar um portfólio diversificado de serviços fotográficos, contemplando diferentes possibilidades de expressão visual.
@@ -108,23 +136,24 @@ Sua proposta institucional está fundamentada em três pilares:
 
 ## 🎓 Contexto acadêmico
 
-Este projeto está sendo desenvolvido como atividade da pós-graduação em **Desenvolvimento Frontend do IFSULDEMINAS**.
+Este projeto foi desenvolvido como atividade da pós-graduação em **Desenvolvimento Frontend do IFSULDEMINAS**.
 
-Seu desenvolvimento tem como objetivo aplicar, consolidar e demonstrar conhecimentos relacionados à construção de interfaces web, utilizando tecnologias frontend e princípios de design e experiência do usuário.
+Seu objetivo é aplicar e consolidar conhecimentos relacionados à construção de interfaces web, utilizando HTML5, CSS3, Bootstrap 5 e JavaScript, além de princípios de design responsivo e experiência do usuário.
 
 ## 📌 Status do projeto
 
-🚧 **Em desenvolvimento**
+**Concluído — versão acadêmica.**
 
-As funcionalidades e seções da landing page estão sendo implementadas gradualmente.
+A implementação das seções, dos componentes e das funcionalidades previstas para o projeto foi finalizada.
 
 ## 👨‍💻 Autor
 
-**Rodrigo Viana**
+**Rodrigo Viana de Oliveira**
 
 Bacharel em Sistemas de Informação | Desenvolvedor em formação.
 
 - GitHub: [@rvianadev](https://github.com/rvianadev)
+- Repositório: [lume-atelier](https://github.com/rvianadev/lume-atelier)
 
 ---
 
