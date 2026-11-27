@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/custas-tjrj", "destination": "https://custas-tjrj.vercel.app/custas-tjrj" },
+    { "source": "/custas-tjrj/:path*", "destination": "https://custas-tjrj.vercel.app/custas-tjrj/:path*" }
+  ]
+}
